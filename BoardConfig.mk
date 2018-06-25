@@ -72,6 +72,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Recovery
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_THEME := portrait_hdpi
