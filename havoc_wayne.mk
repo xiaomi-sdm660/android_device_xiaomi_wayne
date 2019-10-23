@@ -21,29 +21,27 @@
 # definition file).
 #
 
-include device/xiaomi/sdm660-common/BoardConfigCommon.mk
+# Inherit device configuration
+$(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Device Path
-DEVICE_PATH := device/xiaomi/wayne
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
 
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/proc/nvt_wake_gesture"
+# Define first api level
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := wayne-perf_defconfig
-TW_USE_TOOLBOX := true
+TARGET_VENDOR_PRODUCT_NAME := wayne
 
-# Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
-# Platform
-BOARD_VENDOR_PLATFORM := xiaomi-sdm660
+BUILD_FINGERPRINT="xiaomi/wayne/wayne:9/PKQ1.180904.001/V10.3.4.0.PDCCNXM:user/release-keys"
 
-# Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2018-06-05
-
-# WLAN MAC
-WLAN_MAC_SYMLINK := true
-
-SELINUX_IGNORE_NEVERALLOWS := true
+# Device identifier
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_PLATFORM := SDM660
+PRODUCT_NAME := havoc_wayne
+PRODUCT_DEVICE := wayne
+PRODUCT_MODEL := MI 6X
