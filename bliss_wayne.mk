@@ -24,11 +24,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
-# Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
+# Inherit bliss GSM telephony parts
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -37,13 +34,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
-# CarbonRom Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carbon.maintainer="Rcstar6696"
-
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := carbon_wayne
+PRODUCT_NAME := bliss_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
