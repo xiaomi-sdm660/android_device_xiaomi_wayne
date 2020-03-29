@@ -23,9 +23,12 @@
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Superior OS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
+DEVICE_MAINTAINERS="Marcos Almeida"
 $(call inherit-product, vendor/superior/config/common.mk)
 
 # Define first api level
