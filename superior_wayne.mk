@@ -31,6 +31,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 DEVICE_MAINTAINERS="Marcos Almeida"
 $(call inherit-product, vendor/superior/config/common.mk)
 
+# Maintainer SuperiorOS for Wayne
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.superior.maintainer=srmarcoss
+
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
