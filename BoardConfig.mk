@@ -34,7 +34,8 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/nvt_wake_gesture"
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := wayne-perf_defconfig
+TARGET_KERNEL_CONFIG := wayne_defconfig
+
 TW_USE_TOOLBOX := true
 
 # Manifest
