@@ -29,6 +29,9 @@ DEVICE_PATH := device/xiaomi/wayne
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CONFIG := wayne_defconfig
