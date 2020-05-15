@@ -96,6 +96,11 @@ PRODUCT_COPY_FILES += \
 # Vendor files
 $(call inherit-product, vendor/xiaomi/wayne/wayne-vendor.mk)
 
+# Namespace
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # AOSP DEVICE
 PRODUCT_NAME := aosp_wayne
 PRODUCT_DEVICE := wayne
