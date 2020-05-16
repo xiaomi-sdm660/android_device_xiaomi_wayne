@@ -24,8 +24,3 @@
 # inherit MI 6X lineage device config
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/potato_wayne.mk
-
-COMMON_LUNCH_CHOICES := \
-    potato_wayne-eng \
-    potato_wayne-userdebug \
-		potato_wayne-user
