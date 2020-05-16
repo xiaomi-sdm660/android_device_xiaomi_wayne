@@ -23,4 +23,9 @@
 
 # inherit MI 6X lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_wayne.mk
+	$(LOCAL_DIR)/legion_wayne.mk
+
+COMMON_LUNCH_CHOICES := \
+	legion_wayne-userdebug \
+        legion_wayne-user \
+        legion_wayne-eng
