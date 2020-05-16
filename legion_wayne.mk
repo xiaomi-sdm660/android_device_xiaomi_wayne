@@ -24,8 +24,10 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit from Potato vendor
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+# Inherit Carbon product configuration
+$(call inherit-product, vendor/legion/config/common.mk)
+LEGION_BUILD_TYPE := UNOFFICIAL
+$(call inherit-product, vendor/legion/config/phone-xxhdpi-4098-dalvik-heap.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -33,14 +35,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
-
-# POSP Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.potato.maintainer="VtrManfredini"
-
+    
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := potato_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
+
+# Use Gapps
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+endif
