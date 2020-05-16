@@ -39,7 +39,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := potato_wayne
+PRODUCT_NAME := legion_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
 
