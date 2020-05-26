@@ -23,9 +23,9 @@
 
 # inherit MI 6X lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_wayne.mk
+    $(LOCAL_DIR)/derp_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_wayne-eng \
-    bliss_wayne-userdebug \
-		bliss_wayne-user
+    derp_wayne-eng \
+    derp_wayne-userdebug \
+		derp_wayne-user
