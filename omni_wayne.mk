@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := clover
+PRODUCT_RELEASE_NAME := wayne
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -29,12 +29,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.rmnet.func.name=rmnet_bam
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := clover
-PRODUCT_NAME := omni_clover
+PRODUCT_DEVICE := wayne
+PRODUCT_NAME := omni_wayne
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI PAD 4
+PRODUCT_MODEL := MI 6X
 PRODUCT_MANUFACTURER := Xiaomi
 
-TARGET_VENDOR_PRODUCT_NAME := clover
-TARGET_VENDOR_DEVICE_NAME := clover
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=clover PRODUCT_NAME=clover
+TARGET_VENDOR_PRODUCT_NAME := wayne
+TARGET_VENDOR_DEVICE_NAME := wayne
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=wayne PRODUCT_NAME=wayne
