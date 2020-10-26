@@ -41,6 +41,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carbon.maintainer="Rcstar6696"
 
+# Density
+TARGET_SCREEN_DENSITY := 400
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
