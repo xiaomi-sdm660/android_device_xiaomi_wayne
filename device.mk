@@ -21,6 +21,9 @@
 # definition file).
 #
 
+# APEX
+ENABLE_APEX := true
+
 # POWERHINT VARIANT
 EAS_POWERHINT_VARIANT := sdm660
 
