@@ -21,6 +21,12 @@
 # definition file).
 #
 
+# APEX
+ENABLE_APEX := true
+
+# POWERHINT VARIANT
+EAS_POWERHINT_VARIANT := sdm660
+
 # Inherit the fusion-common definitions
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
