@@ -1,4 +1,3 @@
-Copyright (C) 2018 Xiaomi-SDM660 Project
 
 The MI 6X (codenamed _"wayne"_) is a mid-range phone from Xiaomi.
 
@@ -23,3 +22,23 @@ Xiaomi MI 6X was announced and released in April 2018.
 ## Device picture
 
 ![Xiaomi MI 6X](https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/a4842f9afc615164af83c2088a412fc0.jpg "Xiaomi MI 6X")
+
+## Copyright
+
+```
+#
+# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2021 Xiaomi-SDM660 Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
