@@ -12,7 +12,7 @@
 /vendor         ext4    /dev/block/bootdevice/by-name/vendor                                                        flags=display="vendor";backup=1;wipeingui
 /vendor_image   emmc    /dev/block/bootdevice/by-name/vendor
 /firmware       vfat    /dev/block/bootdevice/by-name/modem                                                         flags=display="Firmware";mounttodecrypt;fsflags=ro
-/cust           ext4    /dev/block/bootdevice/by-name/cust
+/cust           ext4    /dev/block/bootdevice/by-name/cust                                                          flags=display="Cust";backup=1;wipeingui
 /misc           emmc    /dev/block/bootdevice/by-name/misc
 /modem          emmc    /dev/block/bootdevice/by-name/modem                                                         flags=backup=1;display="Modem"
 /bluetooth      emmc    /dev/block/bootdevice/by-name/bluetooth                                                     flags=backup=1;subpartitionof=/modem
